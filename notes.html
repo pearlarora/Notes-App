@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    
+    <link rel="stylesheet" href="notes.css">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>N</h1>
+            <i class="far fa-sticky-note"></i>
+            <h1>TES APP</h1>
+        </div>
+        <form id="search">
+            <label for="search-box">Search</label>
+            <input type="search" id="search-box" placeholder="Find your note">
+        </form>
+    </header>
+    
+    <section class="container">
+        
+        <h1>Welcome to Notes App</h1>
+        <div class="text-area">
+            <label for="add-text">Add a note</label><br>
+            <textarea name="user-note" id="add-text" placeholder="Write your note here..." rows="5"></textarea>
+            <button id="add-note">Add Note</button>
+        </div>
+        <br>
+        
+        <h1>Your Notes</h1>
+        <div id="saved-notes"></div>
+        
+    </section> 
+</body>
+
+<script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+<script src="notes.js"></script>
+</html>

@@ -1,0 +1,161 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+button {
+    background: none;
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
+::placeholder {
+    color: rgb(170, 169, 169);
+}
+
+header {
+    background-color: #eb6b16;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+#logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+#logo i {
+    font-size: 30px;
+}
+#search {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+}
+#search label {
+    margin: 0 5px;
+}
+#search-box {
+    height: 30px;
+    width: 190px;
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+
+.container {
+    margin: 35px 15%;
+}
+.container h1 {
+    font-weight: 500;
+    font-size: 35px;
+}
+.text-area {
+    box-shadow: 0 0 3px rgb(202, 202, 202);
+    margin: 20px 0;
+    padding: 20px;
+}
+.text-area label {
+    font-weight: normal;
+    font-size: 23px;
+}
+#add-text {
+    margin-top: 10px;
+    padding: 0.6%;
+    width: 98.5%;
+    border: 1px solid rgb(161, 161, 161);
+    outline: none;
+}
+#add-note {
+    margin-top: 8px;
+    background-color: #eb6b16;
+    color: white;
+    padding: 8px 12px;
+    box-shadow: 0 0 1px black;
+    border-radius: 3px;
+}
+#saved-notes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 15px;
+}
+.single-note {
+    box-shadow: 0 0 3px rgb(202, 202, 202);
+    padding: 25px;
+    max-width: 85%;
+} 
+.single-note h3 {
+    margin-bottom: 8px;
+}
+.single-note button {
+    margin-top: 12px;
+    background-color: #eb6b16;
+    color: white;
+    padding: 8px 12px;
+    box-shadow: 0 0 1px black;
+    border-radius: 3px;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    #saved-notes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #logo {
+        font-size: 13px;
+    }
+    #logo i {
+        font-size: 22px;
+    }
+    #search label {
+        font-size: 13px;
+    }   
+    #search-box {
+        height: 25px;
+        width: 140px;
+    }
+    .container h1 {
+        font-size: 27px;
+    }
+    .text-area label {
+        font-size: 20px;
+    }
+    #saved-notes {
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #logo {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    #logo i {
+        font-size: 20px;
+    }
+    #search label {
+        font-size: 13px;
+    }   
+    #search-box {
+        height: 24px;
+        width: 130px;
+    }
+    .container h1 {
+        font-size: 24px;
+    }
+    .text-area label {
+        font-size: 18px;
+    }
+}
